@@ -53,7 +53,7 @@ public class MemoryMemberRepositoryTest {
             repository.save(member2);
 
             List<Member> result = repository.findAll();
-            Assertions.assertThat(result.size()).isEqualTo(2);
+            Assertions.assertThat(result.size()).isEqualTo(2); // result의 사이즈가 2가 맞는지 비교
         }
 
 }
