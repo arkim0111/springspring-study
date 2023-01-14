@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import javax.swing.text.html.Option;
 import java.util.*;
 
-@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>(); // 동시성도 생각해야하는데, 예제라서 hashmap 사용
