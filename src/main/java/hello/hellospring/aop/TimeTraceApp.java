@@ -6,10 +6,10 @@ import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
 @Aspect // aop
-@Component
+//@Component
 public class TimeTraceApp {
 
-    @Around("execution(* hello.hellospring..*(..))")
+    @Around("execution(* hello.hellospring..*(..)) && !target(hello.hellospring.SpringConfig)")
 
     public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
         long start = System.currentTimeMillis();// ms 단위로 진행시간 측정

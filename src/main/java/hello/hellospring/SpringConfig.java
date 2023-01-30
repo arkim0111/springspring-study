@@ -48,8 +48,8 @@ public class SpringConfig {
 
     }*/
 
-/*    @Bean
+    @Bean
     public TimeTraceApp timeTraceApp() {
         return new TimeTraceApp();
-    }*/
+    }
 }
